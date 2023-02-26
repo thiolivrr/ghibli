@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'century gothic';
+}
+
+#logo {
+    height: 100px;
+}
+
+body {
+    background-color: #DDD1C7;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: #1B9BCA;
+}
+
+header a:hover {
+    border: 2px solid #C490D1;
+}
+
+nav {
+    display: none;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.favorite {
+    display: none;
+    color: white;
+    font-size: 2em;
+}
+
+.content h3, p {
+    padding: 10px;
+}
+
+.content img {
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #DDD1C7;
+    gap: 20px;
+}
+
+.transforming {
+    display: hidden;
+}
+
+.image {
+    width: 400px;
+    border-radius: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #1B9BCA;
+}
+
+footer p {
+    margin: 0px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #C490D1;
+}
+
+@media (min-width: 925px) {
+    main {
+        width: 800px;
+        margin: auto;
+    }
+
+    nav {
+        display: block;
+    }
+
+    header a {
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid white;
+        text-decoration: none;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .favorite {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        width: 1190px;
+    }
+
+    .characters {
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+
+
